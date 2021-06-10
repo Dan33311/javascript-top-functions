@@ -1,28 +1,6 @@
-// Ejercicio
-function fiveAndGreaterOnly(arr) {
-  // your code here
-}
-// test
-// console.log(fiveAndGreaterOnly([3, 6, 8, 2])); /// [6, 8]
-
-
-
-// Mi intento no logrado (segun forma ejercicio)
-function fiveAndGreaterOnly(arr) {
-  return arr.filter(n => n < 6)
-}
-// test
-// console.log(fiveAndGreaterOnly([3, 6, 8, 2])); /// undefined
-
-
-
-// // Mi intento logrado, pero no cumple la forma del ejercicio
-// function fiveAndGreaterOnly(arr) {
-//   arrFiltered = arr.filter(n => n == 6 || n == 8)
-// }
-// // test
-// fiveAndGreaterOnly([3, 6, 8, 2])
-// console.log(arrFiltered); /// [6, 8]
+// ---------------   Hola Mundo   -------------------
+// ---------------------------------------------------------------------------------------------------------------
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 
 const mascotas = [
   { name: 'ozzy', age: 10, typo: 'dog'},
@@ -31,23 +9,25 @@ const mascotas = [
   { name: 'happy', age: 5, typo: 'cat'},
 ]
 
-const ozzy = mascotas.filter(mascota => mascota.name == 'ozzy')
-//console.log(ozzy)
+
+// filter method
+const cats = mascotas.filter(mascota => mascota.typo === 'cat')
+// we can split the code in order to do more clear the code
+const sonGatos = mascota => mascota.typo === 'cat';
+const gatos = mascotas.filter(sonGatos);
 
 
 // classic function
-const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
-
-function filtrarMenoresQue100 (numeros) {
-
-  const menoresQue100 = [];
-
+function filtrarMenoresQue10 (numeros) {
+  const menoresQue10 = [];
   for ( let i = 0; i < numeros.length; i++) {
     if(numeros[i] < 11) {
-      menoresQue100.push(numeros[i])
+      menoresQue10.push(numeros[i])
     }
   }
-  return menoresQue100
+  return menoresQue10
 }
+filtrarMenoresQue10(numeros);
+// short version with filter
+const menoresQueDiez = numeros.filter(n => n < 10);
 
-console.log(filtrarMenoresQue100(numeros));
