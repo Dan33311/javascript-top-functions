@@ -12,6 +12,7 @@ const mascotas = [
 
 // filter method
 const cats = mascotas.filter(mascota => mascota.typo === 'cat')
+
 // we can split the code in order to do more clear the code
 const sonGatos = mascota => mascota.typo === 'cat';
 const gatos = mascotas.filter(sonGatos);
@@ -28,6 +29,7 @@ function filtrarMenoresQue10 (numeros) {
   return menoresQue10
 }
 filtrarMenoresQue10(numeros);
+
 // short version with filter
 const menoresQueDiez = numeros.filter(n => n < 10);
 
