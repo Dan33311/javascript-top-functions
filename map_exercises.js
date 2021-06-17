@@ -5,21 +5,21 @@
 function doubleNumbers(arr){
   return arr.map(number => number * 2);
 }
-console.log("Respuesta 1: ",doubleNumbers([2, 5, 100])); // [4, 10, 200]
+console.log("Respuesta 1: ", doubleNumbers([2, 5, 100])); // [4, 10, 200]
 
 
 // 2) Take an array of numbers and make them strings
 function stringItUp(arr){
   return arr.map(number => number.toString())
 }
-console.log("Respuesta 2: ",stringItUp([2, 5, 100])); // ["2", "5", "100"]
+console.log("Respuesta 2: ", stringItUp([2, 5, 100])); // ["2", "5", "100"]
 
 
 // 3) Capitalize each of an array of names
 function capitalizeNames(arr){
   return arr.map(str => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase())
 }
-console.log("Respuesta 3: ",capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"])); 
+console.log("Respuesta 3: ", capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"])); 
 // ["John", "Jacob", "Jingleheimer", "Schmidt"]
 
 
@@ -28,7 +28,7 @@ function namesOnly(arr){
   // return arr.map(person => person.name) // comun, but the next line is better
   return arr.map(({name}) => name)
 }
-console.log("Respuesta 4: ",namesOnly([{ name: "Angelina Jolie", age: 80 }, { name: "Eric Jones", age: 2 },
+console.log("Respuesta 4: ", namesOnly([{ name: "Angelina Jolie", age: 80 }, { name: "Eric Jones", age: 2 },
 { name: "Paris Hilton", age: 5 }, { name: "Kayne West", age: 16 }, { name: "Bob Ziroll", age: 100 }])); 
 // ["Angelina Jolie", "Eric Jones", "Paris Hilton", "Kayne West", "Bob Ziroll"]
 

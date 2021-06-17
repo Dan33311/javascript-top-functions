@@ -68,3 +68,4 @@ let total = numeros.reduce(acumular, 0);
 // funcion para mostrar el valor doble
 const acumularDobles = (acumulador, numero) => [ ...acumulador, numero * 2];
 const dobles = numeros.reduce(acumularDobles);
+// [6, 20, 40, 100];
